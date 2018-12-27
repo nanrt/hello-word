@@ -1,0 +1,23 @@
+
+
+spring:
+  application:
+    name: springboot
+
+server:
+  port: 8886
+  context-path: /springBootStudy
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8886/eureka/
+    fetch-registry: false
+    register-with-eureka: false
+
+management:
+  security:
+    enabled: false
