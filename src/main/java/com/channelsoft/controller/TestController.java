@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * <dl>
  * <dt>TestController</dt>
@@ -25,6 +28,7 @@ public class TestController {
 
 	@GetMapping("/sayHello")
 	public String test() {
+		List<Integer> list = new ArrayList<>();
 		User user = new User();
 		user.setName("张山");
 		user.setAge(22);
