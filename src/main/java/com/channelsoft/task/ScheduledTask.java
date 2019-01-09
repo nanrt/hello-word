@@ -55,11 +55,11 @@ public class ScheduledTask {
 		int a = calendar.get(Calendar.HOUR_OF_DAY);
 		calendar.setTime(new Date());
 		int b = calendar.get(Calendar.MINUTE);
-		log.info("ten:{}", a);
+		/*log.info("ten:{}", a);
 		log.info("now:{}", b);
 		log.info("当前时间是否大于指定时间{}", ten.before(now));
 		log.info("启动第一个定时任务testTask1");
-		log.info("Scheduling Tasks Examples: The time is now " + new Date());
+		log.info("Scheduling Tasks Examples: The time is now " + new Date());*/
 
 		List<Integer> list = new ArrayList<>();
 		list.add(4);
